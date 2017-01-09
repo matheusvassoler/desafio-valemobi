@@ -1,4 +1,8 @@
-<?php require_once 'ger/Controllers/MerchandiseController.php'; ?>
+<?php 
+require_once 'ger/Controllers/MerchandiseController.php'; 
+require_once 'database/DB.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,14 +21,16 @@
 	<body>
 		<div class="page">
 			<div class="logo">
-				<img src="public/assets/images/grey-logo.png" width="150px" alt="Gerpro" />
+				<a href="index" title="Gerpro">
+					<img src="public/assets/images/grey-logo.png" width="150px" alt="Gerpro" />
+				</a>
 			</div>
 			<div class="top_texts">
 				<h1>Cadastrar mercadoria</h1>
 				<p>Cadastrar uma mercadoria no Gerpro é totalmente rápido, basta preencher os campos abaixo e você já poderá ver o produto adicionado.</p>
 			</div>
 			<div class="register_form">
-				<form action="verifications.php" method="post" id="form">
+				<form action="" method="post" id="form">
 					<div class="control-group rf_input">
 						<label class="string" for="code">Código da mercadoria</label>
 						<input class="string" type="text" name="code" id="code" />

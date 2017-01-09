@@ -44,7 +44,7 @@ ul {
 }
 
 .global_content {
-    margin-top: 250px;
+    margin-top: 200px;
     text-align: center;
     color: #fff;
 }
@@ -66,9 +66,17 @@ ul {
     padding: 10px 20px;
     margin-top: 30px;
     border-radius: 1px;
+    -webkit-transition:background 0.5s ease-out;
+    -moz-transition:background 0.5s ease-out;
+    -o-transition:background 0.5s ease-out;
+    -ms-transition:background 0.5s ease-out;
 }
 
 .global_content a:hover {
 	background: #fff;
 	color: #57575f;
+    -webkit-transition:background 0.5s ease-out;
+    -moz-transition:background 0.5s ease-out;
+    -o-transition:background 0.5s ease-out;
+    -ms-transition:background 0.5s ease-out;
 }

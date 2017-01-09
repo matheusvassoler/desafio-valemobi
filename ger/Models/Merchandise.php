@@ -87,7 +87,7 @@ class Merchandise extends DB implements Imodel{
 		}
 	}
 
-	public function showAllMerchandise() {
+	public static function showAllMerchandise() {
 		//Search the connection
 		$pdo = parent::getDB();
 

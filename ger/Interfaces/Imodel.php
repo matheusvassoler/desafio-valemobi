@@ -2,5 +2,5 @@
 
 interface Imodel {
 	public function addMerchandise();
-	public function showAllMerchandise();
+	public static function showAllMerchandise();
 }
