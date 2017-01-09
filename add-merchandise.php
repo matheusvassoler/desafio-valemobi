@@ -2,7 +2,6 @@
 require_once 'ger/Controllers/MerchandiseController.php'; 
 require_once 'database/DB.php';
 ?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,6 +19,11 @@ require_once 'database/DB.php';
 	</head>
 	<body>
 		<div class="page">
+			<?php if(isset($notification)) { ?>
+			<div class="notification">
+				<p>Erro ao cadastrar produto</p>
+			</div>
+			<?php } else {} ?>
 			<div class="logo">
 				<a href="index" title="Gerpro">
 					<img src="public/assets/images/grey-logo.png" width="150px" alt="Gerpro" />

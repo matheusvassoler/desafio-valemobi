@@ -3,8 +3,8 @@
 abstract class DB {
 	
     //Create the constants for the connection
-    const USER = "u961989317_ger";
-    const PASS = "KScgoWZ3da3m";
+    const USER = "root";
+    const PASS = "";
 
     //Create a static attribute set to null
     private static $instance = null;
@@ -13,7 +13,7 @@ abstract class DB {
 
         try {
             if(self::$instance == null) {
-		        $dsn = "mysql:host=mysql.hostinger.com.br;dbname=u961989317_ger";
+		        $dsn = "mysql:host=localhost;dbname=gerpro";
 		        self::$instance = new PDO($dsn, self::USER, self::PASS);
 		        self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }

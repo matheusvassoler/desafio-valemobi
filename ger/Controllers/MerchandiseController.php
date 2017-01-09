@@ -32,7 +32,7 @@ if(isset($submit)) {
 	if($merchandise->addMerchandise()) {
 		header("Location: merchandise-table.php");
 	} else {
-		echo "ERRO!";
+		$notification = "Erro ao cadastrar o produto";
 	}
 
 }
